@@ -16,4 +16,4 @@ Public License is included with this distribution in the file GPL.txt
 Several other software packages and source files have been included in 
 this distribution and are subject to their own license specifications.  
 Please see qhull/*, ply/*, include/dlfc-win32.h, src/maxdet_src.cpp, 
-cmdline/*, and tinyxml/* for information on those packages
+cmdline/*, and tinyxml/* for information on those packages.

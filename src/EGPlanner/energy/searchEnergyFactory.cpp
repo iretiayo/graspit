@@ -17,9 +17,7 @@
 // You should have received a copy of the GNU General Public License
 // along with GraspIt!.  If not, see <http://www.gnu.org/licenses/>.
 //
-// Author(s): Matei T. Ciocarlie
-//
-// $Id: searchEnergy.cpp,v 1.42 2009/09/13 19:57:38 hao Exp $
+// Author(s): Iretiayo Akinola, Jake Varley
 //
 //######################################################################
 

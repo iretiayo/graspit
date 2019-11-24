@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<!-- d0: gripper_finger1_inner_knuckle_joint, min=-3.14, max=3.14 -->
+<!-- d1: gripper_finger1_finger_tip_joint, min=-3.14, max=3.14 -->
+<!-- d2: gripper_finger1_joint, min=0, max=0.804 -->
+<!-- d3: gripper_finger2_inner_knuckle_joint, min=-3.14, max=3.14 -->
+<!-- d4: gripper_finger2_finger_tip_joint, min=-3.14, max=3.14 -->
+<!-- d5: gripper_finger2_joint, min=-3.14, max=3.14 -->
+<EigenGrasps dimensions="1">
+	<EG>
+		<EigenValue value="0.5"/> <!--EigenValue is not used in the code at this stage -->
+		<!--Limits min="0" max="0"/-->
+		<DimVals d0="0.402"/>
+	</EG>
+	<ORIGIN>
+		<EigenValue value="0.5"/> 
+		<DimVals d0="0.402"/>
+	</ORIGIN>
+</EigenGrasps>

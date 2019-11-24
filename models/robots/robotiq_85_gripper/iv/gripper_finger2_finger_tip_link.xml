@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<root>
+	<material>plastic</material>
+	<mass>19.555</mass>
+	<cog>0 0 0</cog>
+	<inertia_matrix>0.002 0 0 0  0.005 0 0  0 0.006</inertia_matrix>
+	<geometryFile>gripper_finger2_finger_tip_link.iv</geometryFile>
+</root>

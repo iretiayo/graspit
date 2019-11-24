@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<robot type="Hand">
+	<palm>gripper_base_link.xml</palm>
+
+	<dof type='r'>
+		<defaultVelocity>2.0</defaultVelocity>
+		<maxEffort>2.5e+9</maxEffort>
+		<Kp>1e+09</Kp>
+		<Kd>1e+07</Kd>
+		<draggerScale>20</draggerScale>
+	</dof>
+
+
+	<chain> 
+		<transform> 
+			<translation>54.9045 30.6011 0</translation>
+			<rotationMatrix>1 0 0 0 -1 -2.06724e-13 0 2.06724e-13 -1 </rotationMatrix> 
+		</transform>
+		<joint type='Revolute'>
+			<theta> d0+0</theta>
+			<d>0</d>
+			<a>0</a>
+			<alpha>0</alpha>
+			<minValue>0</minValue>
+			<maxValue>46.0658</maxValue>
+			<viscousFriction>5.0e+7</viscousFriction>
+		</joint>
+		<link dynamicJointType='Revolute'>gripper_finger1_knuckle_link.xml</link>
+	</chain>
+	<chain> 
+		<transform> 
+			<translation>54.9045 -30.6011 0</translation>
+			<rotationMatrix>1 0 0 0 1 0 0 0 1 </rotationMatrix> 
+		</transform>
+		<joint type='Revolute'>
+			<theta> d0+0</theta>
+			<d>0</d>
+			<a>0</a>
+			<alpha>0</alpha>
+			<minValue>-179.909</minValue>
+			<maxValue>179.909</maxValue>
+			<viscousFriction>5.0e+7</viscousFriction>
+		</joint>
+		<link dynamicJointType='Revolute'>gripper_finger2_knuckle_link.xml</link>
+	</chain>
+	<chain> 
+		<transform> 
+			<translation>61.42 12.7 0</translation>
+			<rotationMatrix>1 0 0 0 -1 -2.06724e-13 0 2.06724e-13 -1 </rotationMatrix> 
+		</transform>
+		<joint type='Revolute'>
+			<theta> d0+-41.1405</theta>
+			<!-- <theta> d0</theta> -->
+			<d>0</d>
+			<a>57.15</a>
+			<alpha>0</alpha>
+			<minValue>-3140</minValue>
+			<maxValue>3140</maxValue>
+			<viscousFriction>5.0e+7</viscousFriction>
+		</joint>
+		<joint type='Revolute'>
+			<theta> d0*-1</theta>
+			<d>0</d>
+			<a>0</a>
+			<alpha>0</alpha>
+			<minValue>-3140</minValue>
+			<maxValue>3140</maxValue>
+			<viscousFriction>5.0e+7</viscousFriction>
+		</joint>
+		<link dynamicJointType='Revolute'>gripper_finger1_inner_knuckle_link.xml</link>
+		<link dynamicJointType='Revolute'>gripper_finger1_finger_tip_link.xml</link>
+	</chain>
+	<chain> 
+		<transform> 
+			<translation>61.42 -12.7 0</translation>
+			<rotationMatrix>1 0 0 0 1 0 0 0 1 </rotationMatrix> 
+		</transform>
+		<joint type='Revolute'>
+			<theta> d0+-41.1405</theta>
+			<d>0</d>
+			<a>57.15</a>
+			<alpha>0</alpha>
+			<minValue>-3140</minValue>
+			<maxValue>3140</maxValue>
+			<viscousFriction>5.0e+7</viscousFriction>
+		</joint>
+		<joint type='Revolute'>
+			<theta> d0*-1</theta>
+			<d>0</d>
+			<a>0</a>
+			<alpha>0</alpha>
+			<minValue>-3140</minValue>
+			<maxValue>3140</maxValue>
+			<viscousFriction>5.0e+7</viscousFriction>
+		</joint>
+		<link dynamicJointType='Revolute'>gripper_finger2_inner_knuckle_link.xml</link>
+		<link dynamicJointType='Revolute'>gripper_finger2_finger_tip_link.xml</link>
+	</chain>
+	<eigenGrasps>eigen/eigen.xml</eigenGrasps>
+	<approachDirection>
+        <referenceLocation>90.0 0.0 0.0</referenceLocation>
+        <direction>1.0 0.0 0.0</direction>
+    </approachDirection>
+	<virtualContacts>virtual/contacts.xml</virtualContacts>
+</robot>
